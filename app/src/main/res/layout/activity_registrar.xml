@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrar">
+
+    <TextView
+        android:id="@+id/txt_ing_eg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Registrar Ingresos / Egresos"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/monto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_ing_eg"
+        android:hint="Monto"
+        android:padding="10dp" />
+    <RadioGroup
+        android:id="@+id/btn_radio"
+        android:layout_below="@+id/monto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/btn_ing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Ingreso"
+            android:padding="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_eg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_ing"
+            android:padding="10dp"
+            android:text="Egreso"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tipo_cuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_radio"
+        android:layout_marginTop="44dp"
+        android:text="Tipo de cuenta" />
+
+    <RadioGroup
+        android:id="@+id/btn_radio2"
+        android:layout_below="@+id/tipo_cuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/btn_ing2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Efectivo"
+            android:padding="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_eg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_ing"
+            android:padding="10dp"
+            android:text="Ahorro"
+            android:textSize="20dp" />
+        <RadioButton
+            android:id="@+id/btn_eg4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_ing"
+            android:padding="10dp"
+            android:text="Cuenta de crédito"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_radio2"
+        android:layout_marginTop="120dp"
+        android:background="@color/colorAccent"
+        android:text="Registrar"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+</RelativeLayout>
