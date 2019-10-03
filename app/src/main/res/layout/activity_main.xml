@@ -41,7 +41,7 @@
         app:srcCompat="@drawable/uno" />
 
     <ProgressBar
-        android:id="@+id/progressbar1"
+        android:id="@+id/progressbar"
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
